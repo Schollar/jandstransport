@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <v-carousel>
+    <v-carousel hide-delimiters>
       <v-carousel-item
         v-for="(item, i) in items"
         :key="i"
@@ -19,16 +19,55 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          src: "./boat.JPG",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          src: "./boatandhills.JPG",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+          src: "./box.JPG",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+          src: "./chopper.JPG",
+        },
+        {
+          src: "./dirtbike.JPG",
+        },
+        {
+          src: "./dirtbikeintruck.JPG",
+        },
+        {
+          src: "./faggio.JPG",
+        },
+        {
+          src: "./faggioandchopper.JPG",
+        },
+        {
+          src: "./guyandboat.JPG",
+        },
+        {
+          src: "./guyinboat.JPG",
+        },
+        {
+          src: "./guyonharley.JPG",
+        },
+        {
+          src: "./harley.JPG",
+        },
+        {
+          src: "./mountain.JPG",
+        },
+        {
+          src: "./streetbike.JPG",
+        },
+        {
+          src: "./streetbikeuncovered.JPG",
+        },
+        {
+          src: "./truckandtrailer.JPG",
+        },
+        {
+          src: "./trucksunset.JPG",
         },
       ],
     };
@@ -40,8 +79,9 @@ export default {
 .container {
   display: grid;
   place-items: center;
+  background-color: #303633;
 }
 .v-window {
-  width: 90%;
+  width: 80%;
 }
 </style>

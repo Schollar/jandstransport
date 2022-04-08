@@ -10,13 +10,7 @@
       <span></span>
       <!-- Using a list to display navigation links, also on click we close the menu -->
       <ul class="nav_menu">
-        <router-link :to="{ name: 'Home', hash: '#home' }"
-          ><li @click="close()">Home</li></router-link
-        >
         <router-link to="/#about"><li @click="close()">About</li></router-link>
-        <router-link to="/#projects"
-          ><li @click="close()">Projects</li></router-link
-        >
         <router-link to="/#contact"
           ><li @click="close()">Contact</li></router-link
         >
@@ -49,10 +43,10 @@ export default {
   user-select: none;
   a {
     text-decoration: none;
-    color: #f2542d;
+    color: #368f8b;
   }
   a:hover {
-    color: purple;
+    color: #dcedff;
   }
 }
 
@@ -77,7 +71,7 @@ export default {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #f2542d;
+  background: #368f8b;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;

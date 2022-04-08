@@ -9,13 +9,23 @@
         </h2>
       </section>
       <!-- m - applies margin, y - applies the spacing for both *-top and *-bottom thats why class of my-8 here -->
-      <router-link
-        class="text-decoration-none"
-        :to="{ name: 'Home', hash: '#about' }"
-        ><v-btn color="#f2542d" outlined class="btn my-8">
-          View more
-        </v-btn></router-link
-      >
+      <section class="button_container">
+        <router-link
+          class="text-decoration-none"
+          :to="{ name: 'Home', hash: '#about' }"
+          ><v-btn color="#368f8b" outlined class="btn y-8">
+            Learn more
+          </v-btn></router-link
+        >
+        <p>Or</p>
+        <router-link
+          class="text-decoration-none"
+          :to="{ name: 'Home', hash: '#contact' }"
+          ><v-btn color="#368f8b" outlined class="btn y-8">
+            Contact Us
+          </v-btn></router-link
+        >
+      </section>
     </section>
   </section>
 </template>
@@ -38,6 +48,8 @@ export default {
 <style lang="scss" scoped>
 .banner {
   text-align: center;
+  display: grid;
+  place-items: center;
   height: 100vh;
   width: 100vw;
   padding: 10%;
@@ -48,27 +60,30 @@ export default {
 }
 
 .info_container {
-  height: 100%;
   margin-top: 10%;
 }
 .header {
   font-size: 3.5em;
-  color: #f2542d;
+  color: #368f8b;
   height: 100%;
-}
-p {
-  margin-left: 25px;
-  padding: 0;
-  font-size: 1.5em;
-  font-weight: bolder;
-  color: #f15152;
+  font-family: "Bebas Neue", cursive;
 }
 
 .dev_span {
-  color: #f2542d;
+  color: #368f8b;
 }
 
 .secondary-text {
-  color: #c5c3c6;
+  color: #dcedff;
+  font-family: "Oxygen", sans-serif;
+}
+.button_container {
+  margin-top: 15%;
+  > p {
+    font-size: 1em;
+    color: #dcedff;
+    margin: 5%;
+    font-family: "Oxygen", sans-serif;
+  }
 }
 </style>
