@@ -13,7 +13,7 @@
         <router-link
           class="text-decoration-none"
           :to="{ name: 'Home', hash: '#about' }"
-          ><v-btn color="#368f8b" outlined class="btn y-8">
+          ><v-btn color="#368f8b" raised tile class="btn y-8">
             Learn more
           </v-btn></router-link
         >
@@ -21,7 +21,7 @@
         <router-link
           class="text-decoration-none"
           :to="{ name: 'Home', hash: '#contact' }"
-          ><v-btn color="#368f8b" outlined class="btn y-8">
+          ><v-btn color="#368f8b" raised tile class="btn y-8">
             Contact Us
           </v-btn></router-link
         >
@@ -76,6 +76,9 @@ export default {
 .secondary-text {
   color: #dcedff;
   font-family: "Oxygen", sans-serif;
+}
+.btn {
+  color: #dcedff;
 }
 .button_container {
   margin-top: 15%;

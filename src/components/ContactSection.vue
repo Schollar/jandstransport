@@ -4,6 +4,7 @@
       <section class="text_container">
         <h2>Contact</h2>
         <p>Text or Call at:</p>
+        <a href="tel:713-471-9149"> Call now!</a>
         <p>713-471-9149</p>
         <p>
           If you would like to contact us for anything at all, feel free to
