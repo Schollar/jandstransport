@@ -23,9 +23,9 @@
           to look for another carrier again.
         </p>
       </section>
-      <!-- <section class="image_container">
-        <v-img src="../assets/me.jpg" width="500px"> </v-img>
-      </section> -->
+      <section class="image_container">
+        <v-img :src="truck.src" width="500px"> </v-img>
+      </section>
     </section>
   </div>
 </template>
@@ -33,6 +33,13 @@
 <script>
 export default {
   name: "about-section",
+  data() {
+    return {
+      truck: {
+        src: "./truckandtrailer.JPG",
+      },
+    };
+  },
 };
 </script>
 
@@ -46,10 +53,19 @@ export default {
 .text_container {
   width: 80%;
 }
+.image_container {
+  margin-top: 5%;
+  width: 65%;
+}
+.v-image {
+  width: 90% !important;
+  place-self: center;
+}
 
 #about {
   height: auto;
   background-color: #303633;
+  padding-top: 5%;
 
   h2 {
     font-weight: bold;
@@ -68,8 +84,21 @@ export default {
 }
 @media screen and (min-width: 700px) {
   #about {
+    display: grid;
+    place-items: center;
+    padding-top: 5%;
     p {
       font-size: 1.5em;
+      align-self: start;
+    }
+    h2 {
+      font-size: 3em;
+    }
+    .container {
+      width: 80%;
+    }
+    .text_container {
+      place-self: start;
     }
   }
   .v-image {

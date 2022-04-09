@@ -19,6 +19,13 @@ export default {
     return {
       items: [
         {
+          src: "./trucksunset.JPG",
+        },
+        {
+          src: "./truckandtrailer.JPG",
+        },
+
+        {
           src: "./boat.JPG",
         },
         {
@@ -63,12 +70,6 @@ export default {
         {
           src: "./streetbikeuncovered.JPG",
         },
-        {
-          src: "./truckandtrailer.JPG",
-        },
-        {
-          src: "./trucksunset.JPG",
-        },
       ],
     };
   },
@@ -83,5 +84,11 @@ export default {
 }
 .v-window {
   width: 80%;
+}
+
+@media screen and (min-width: 700px) {
+  .v-window {
+    width: 20%;
+  }
 }
 </style>

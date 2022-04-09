@@ -4,8 +4,12 @@
       <section class="text_container">
         <h2>Contact</h2>
         <p>Text or Call at:</p>
-        <a href="tel:713-471-9149"> Call now!</a>
-        <p>713-471-9149</p>
+        <a href="tel:713-471-9149" class="hidden-lg-and-up">713-471-9149</a>
+        <p>Email:</p>
+        <a href="mailto:JasonCostine@yahoo.com" class="email"
+          >JasonCostine@yahoo.com</a
+        >
+        <p class="hidden-md-and-down">713-471-9149</p>
         <p>
           If you would like to contact us for anything at all, feel free to
           write message and I will get back to you as soon as possible
@@ -114,6 +118,7 @@ export default {
     font-size: 2em;
     font-family: "Bebas Neue", cursive;
     color: #368f8b;
+    margin-top: 15%;
   }
 
   p {
@@ -142,11 +147,26 @@ export default {
   .btn {
     font-weight: bold;
     border-width: 3px;
+    margin-bottom: 10%;
   }
 }
 @media screen and (min-width: 700px) {
   #contact {
     margin-top: 10%;
+  }
+  .email {
+    text-decoration: none;
+    pointer-events: pointer;
+    font-size: 1.5em;
+  }
+  .text_container {
+    h2 {
+      font-size: 3em;
+      margin-top: 0;
+    }
+    p {
+      font-size: 2em;
+    }
   }
 }
 @media screen and (min-width: 915px) {
@@ -154,7 +174,8 @@ export default {
     margin-top: 0;
   }
   .form {
-    place-self: center;
+    justify-self: center;
+    align-self: start;
     width: 80%;
   }
 }

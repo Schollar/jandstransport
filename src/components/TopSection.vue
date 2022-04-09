@@ -1,7 +1,7 @@
 <template>
   <section class="banner">
     <section class="info_container">
-      <section>
+      <section class="heading_container">
         <h1 class="header ma-0 pa-0">J & S Trucking LLC</h1>
         <h2 class="secondary-text">
           Taking care of all your <span class="dev_span">Delivery</span> needs
@@ -36,8 +36,8 @@ export default {
   name: "top-section",
   data() {
     return {
-      mountain: {
-        src: "/wide.JPG",
+      sunset: {
+        src: "/trucksunsetbg.jpg",
       },
     };
   },
@@ -52,15 +52,20 @@ export default {
   place-items: center;
   height: 100vh;
   width: 100vw;
-  padding: 10%;
-  background-blend-mode: multiply;
-  background-position: center;
-  background-size: 80%;
+  padding: 4%;
+
   background-color: #303633;
+}
+.heading_container {
+  margin-top: 10%;
 }
 
 .info_container {
+  background-image: url("../assets/trucksunset.jpg");
   margin-top: 10%;
+  height: 100%;
+  background-size: 100% 100%;
+  width: 100%;
 }
 .header {
   font-size: 3.5em;
@@ -87,6 +92,21 @@ export default {
     color: #dcedff;
     margin: 5%;
     font-family: "Oxygen", sans-serif;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .banner {
+    padding: 0;
+  }
+  .secondary-text {
+    margin-left: 30%;
+    width: 40%;
+  }
+  .info_container {
+    margin-top: 0;
+    background-size: 55% 95%;
+    background-position: center;
   }
 }
 </style>
