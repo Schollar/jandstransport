@@ -3,13 +3,20 @@
     <section class="container">
       <section class="text_container">
         <h2>Contact</h2>
+        <section class="email_container">
+          <p class="mb-2">Email:</p>
+          <a href="mailto:JasonCostine@yahoo.com" class="email"
+            >JasonCostine@yahoo.com</a
+          >
+        </section>
         <p>Text or Call at:</p>
-        <a href="tel:713-471-9149" class="hidden-lg-and-up">713-471-9149</a>
-        <p>Email:</p>
-        <a href="mailto:JasonCostine@yahoo.com" class="email"
-          >JasonCostine@yahoo.com</a
-        >
-        <p class="hidden-md-and-down">713-471-9149</p>
+        <section class="hidden-lg-and-up">
+          <v-btn color="#368f8b" raised tile class="btn mb-4">
+            <a href="tel:713-471-9149" class="phone_button">Call Now</a>
+          </v-btn>
+          <p>(713)-471-9149</p>
+        </section>
+        <p class="hidden-md-and-down">(713)-471-9149</p>
         <p>
           If you would like to contact us for anything at all, feel free to
           write message and I will get back to you as soon as possible
@@ -110,7 +117,10 @@ export default {
   background-color: #303633;
   gap: 25px;
 }
-
+.phone_button {
+  text-decoration: none;
+  color: #dcedff;
+}
 .text_container {
   align-self: center;
 
@@ -126,6 +136,17 @@ export default {
     font-family: "Oxygen", sans-serif;
     font-size: 1em;
     color: #dcedff;
+  }
+}
+.email_container {
+  padding-bottom: 3% !important;
+
+  > .v-btn {
+    margin-bottom: 3% !important;
+  }
+
+  > p {
+    margin: 0;
   }
 }
 .container {
@@ -152,7 +173,7 @@ export default {
 }
 @media screen and (min-width: 700px) {
   #contact {
-    margin-top: 10%;
+    padding-top: 10%;
   }
   .email {
     text-decoration: none;

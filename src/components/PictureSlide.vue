@@ -81,6 +81,7 @@ export default {
   display: grid;
   place-items: center;
   background-color: #303633;
+  padding-bottom: 3%;
 }
 .v-window {
   width: 80%;

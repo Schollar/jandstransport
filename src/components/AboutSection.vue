@@ -24,7 +24,7 @@
         </p>
       </section>
       <section class="image_container">
-        <v-img :src="truck.src" width="500px"> </v-img>
+        <v-img :src="truck.src"> </v-img>
       </section>
     </section>
   </div>
@@ -54,12 +54,15 @@ export default {
   width: 80%;
 }
 .image_container {
+  display: grid;
+  place-items: center;
   margin-top: 5%;
-  width: 65%;
+  width: 95%;
 }
 .v-image {
   width: 90% !important;
   place-self: center;
+  justify-items: center;
 }
 
 #about {
@@ -101,8 +104,11 @@ export default {
       place-self: start;
     }
   }
+  .image_container {
+    width: 100%;
+  }
   .v-image {
-    width: 1000% !important;
+    width: auto !important;
   }
 }
 </style>

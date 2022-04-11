@@ -4,7 +4,7 @@
       <section class="heading_container">
         <h1 class="header ma-0 pa-0">J & S Trucking LLC</h1>
         <h2 class="secondary-text">
-          Taking care of all your <span class="dev_span">Delivery</span> needs
+          Taking care of all your <span class="dev_span">Transport</span> needs
           across America
         </h2>
       </section>
