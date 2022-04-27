@@ -26,7 +26,7 @@ export default {
   background-color: #303633;
   display: grid;
   width: 100vw;
-  border-top: 1px solid #041f1e;
+  // border-top: 1px solid #041f1e;
 }
 .footer {
   text-align: center;

@@ -3,20 +3,14 @@
     <section class="container">
       <section class="text_container">
         <h2>Contact</h2>
-        <section class="email_container">
-          <p class="mb-2">Email:</p>
-          <a href="mailto:JasonCostine@yahoo.com" class="email"
-            >JasonCostine@yahoo.com</a
-          >
-        </section>
         <p>Text or Call at:</p>
+        <p>(713)-471-9149</p>
         <section class="hidden-lg-and-up">
           <v-btn color="#368f8b" raised tile class="btn mb-4">
-            <a href="tel:713-471-9149" class="phone_button">Call Now</a>
+            <a href="tel:713-471-9149" class="contact_button">Call Now</a>
           </v-btn>
-          <p>(713)-471-9149</p>
         </section>
-        <p class="hidden-md-and-down">(713)-471-9149</p>
+
         <p>
           If you would like to contact us for anything at all, feel free to
           write message and I will get back to you as soon as possible
@@ -91,8 +85,8 @@ export default {
     sendEmail() {
       try {
         emailjs.sendForm(
-          "contact_service",
-          "contact_form",
+          "jstransport",
+          "jsform",
           this.$refs["form"],
           "DVlO9CMDD-mJLBo1x",
           {
@@ -117,9 +111,12 @@ export default {
   background-color: #303633;
   gap: 25px;
 }
-.phone_button {
+.contact_button {
   text-decoration: none;
   color: #dcedff;
+}
+.btn {
+  width: 40%;
 }
 .text_container {
   align-self: center;
