@@ -68,7 +68,22 @@ export default {
           src: "./streetbike.JPG",
         },
         {
-          src: "./streetbikeuncovered.JPG",
+          src: "./truck.jpg",
+        },
+        {
+          src: "./trailer_truck.jpg",
+        },
+        {
+          src: "./trailer_truck2.jpg",
+        },
+        {
+          src: "./truck_trailer3.jpg",
+        },
+        {
+          src: "./truck_trailer4.jpg",
+        },
+        {
+          src: "./trailer.jpg",
         },
       ],
     };
@@ -84,12 +99,12 @@ export default {
   padding-bottom: 3%;
 }
 .v-window {
-  width: 80%;
+  width: 100%;
 }
 
 @media screen and (min-width: 700px) {
   .v-window {
-    width: 20%;
+    width: 30%;
   }
 }
 </style>

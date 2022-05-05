@@ -2,7 +2,7 @@
   <section class="banner">
     <section class="info_container">
       <section class="heading_container">
-        <h1 class="header ma-0 pa-0">J & S Trucking LLC</h1>
+        <h1 class="header ma-0 pa-0">J&S Transport Services of Houston LLC</h1>
         <h2 class="secondary-text">
           Taking care of all your <span class="dev_span">Transport</span> needs
           across America
@@ -86,7 +86,7 @@ export default {
   color: #dcedff;
 }
 .button_container {
-  margin-top: 15%;
+  margin-top: 10%;
   > p {
     font-size: 1em;
     color: #dcedff;
